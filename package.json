@@ -1,8 +1,8 @@
 {
-  "name": "@google-cloud/security-private-ca",
+  "name": "privateca",
   "version": "0.1.0",
   "description": "Privateca client for Node.js",
-  "repository": "googleapis/nodejs-security-private-ca",
+  "repository": "googleapis/nodejs-privateca",
   "license": "Apache-2.0",
   "author": "Google LLC",
   "main": "build/src/index.js",
@@ -32,8 +32,6 @@
     "docs-test": "linkinator docs",
     "fix": "gts fix",
     "lint": "gts check",
-    "prelint": "cd samples; npm link ../; npm i",
-    "samples-test": "cd samples/ && npm link ../ && npm test",
     "prepare": "npm run compile-protos && npm run compile",
     "system-test": "c8 mocha build/system-test",
     "test": "c8 mocha build/test"
