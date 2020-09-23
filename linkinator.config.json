@@ -3,7 +3,10 @@
   "skip": [
     "https://codecov.io/gh/googleapis/",
     "www.googleapis.com",
-    "img.shields.io"
+    "img.shields.io",
+    "https://github.com/googleapis/nodejs-security-private-ca/blob/master/CHANGELOG.md",
+    "https://googleapis.dev/nodejs/security-private-ca/latest/index.html",
+    "https://www.npmjs.org/package/privateca"
   ],
   "silent": true,
   "concurrency": 10
