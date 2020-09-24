@@ -22,7 +22,6 @@ const execSync = cmd => cp.execSync(cmd, {encoding: 'utf-8'});
 
 const {
   CertificateAuthorityServiceClient,
-  // eslint-disable-next-line node/no-extraneous-require
 } = require('@google-cloud/security-private-ca');
 
 const client = new CertificateAuthorityServiceClient();

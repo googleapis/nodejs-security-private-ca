@@ -19,7 +19,6 @@ async function main(projectId, location, name) {
 
   const {
     CertificateAuthorityServiceClient,
-    // eslint-disable-next-line node/no-extraneous-require
   } = require('@google-cloud/security-private-ca');
 
   // TODO(developer): replace with your prefered project ID.
