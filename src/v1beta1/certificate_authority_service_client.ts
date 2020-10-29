@@ -266,34 +266,10 @@ export class CertificateAuthorityServiceClient {
     const updateCertificateAuthorityMetadata = protoFilesRoot.lookup(
       '.google.cloud.security.privateca.v1beta1.OperationMetadata'
     ) as gax.protobuf.Type;
-    const createCertificateRevocationListResponse = protoFilesRoot.lookup(
-      '.google.cloud.security.privateca.v1beta1.CertificateRevocationList'
-    ) as gax.protobuf.Type;
-    const createCertificateRevocationListMetadata = protoFilesRoot.lookup(
-      '.google.cloud.security.privateca.v1beta1.OperationMetadata'
-    ) as gax.protobuf.Type;
     const updateCertificateRevocationListResponse = protoFilesRoot.lookup(
       '.google.cloud.security.privateca.v1beta1.CertificateRevocationList'
     ) as gax.protobuf.Type;
     const updateCertificateRevocationListMetadata = protoFilesRoot.lookup(
-      '.google.cloud.security.privateca.v1beta1.OperationMetadata'
-    ) as gax.protobuf.Type;
-    const createReusableConfigResponse = protoFilesRoot.lookup(
-      '.google.cloud.security.privateca.v1beta1.ReusableConfig'
-    ) as gax.protobuf.Type;
-    const createReusableConfigMetadata = protoFilesRoot.lookup(
-      '.google.cloud.security.privateca.v1beta1.OperationMetadata'
-    ) as gax.protobuf.Type;
-    const deleteReusableConfigResponse = protoFilesRoot.lookup(
-      '.google.protobuf.Empty'
-    ) as gax.protobuf.Type;
-    const deleteReusableConfigMetadata = protoFilesRoot.lookup(
-      '.google.cloud.security.privateca.v1beta1.OperationMetadata'
-    ) as gax.protobuf.Type;
-    const updateReusableConfigResponse = protoFilesRoot.lookup(
-      '.google.cloud.security.privateca.v1beta1.ReusableConfig'
-    ) as gax.protobuf.Type;
-    const updateReusableConfigMetadata = protoFilesRoot.lookup(
       '.google.cloud.security.privateca.v1beta1.OperationMetadata'
     ) as gax.protobuf.Type;
 
@@ -361,15 +337,6 @@ export class CertificateAuthorityServiceClient {
           updateCertificateAuthorityMetadata
         )
       ),
-      createCertificateRevocationList: new this._gaxModule.LongrunningDescriptor(
-        this.operationsClient,
-        createCertificateRevocationListResponse.decode.bind(
-          createCertificateRevocationListResponse
-        ),
-        createCertificateRevocationListMetadata.decode.bind(
-          createCertificateRevocationListMetadata
-        )
-      ),
       updateCertificateRevocationList: new this._gaxModule.LongrunningDescriptor(
         this.operationsClient,
         updateCertificateRevocationListResponse.decode.bind(
@@ -378,21 +345,6 @@ export class CertificateAuthorityServiceClient {
         updateCertificateRevocationListMetadata.decode.bind(
           updateCertificateRevocationListMetadata
         )
-      ),
-      createReusableConfig: new this._gaxModule.LongrunningDescriptor(
-        this.operationsClient,
-        createReusableConfigResponse.decode.bind(createReusableConfigResponse),
-        createReusableConfigMetadata.decode.bind(createReusableConfigMetadata)
-      ),
-      deleteReusableConfig: new this._gaxModule.LongrunningDescriptor(
-        this.operationsClient,
-        deleteReusableConfigResponse.decode.bind(deleteReusableConfigResponse),
-        deleteReusableConfigMetadata.decode.bind(deleteReusableConfigMetadata)
-      ),
-      updateReusableConfig: new this._gaxModule.LongrunningDescriptor(
-        this.operationsClient,
-        updateReusableConfigResponse.decode.bind(updateReusableConfigResponse),
-        updateReusableConfigMetadata.decode.bind(updateReusableConfigMetadata)
       ),
     };
 
@@ -458,15 +410,11 @@ export class CertificateAuthorityServiceClient {
       'restoreCertificateAuthority',
       'scheduleDeleteCertificateAuthority',
       'updateCertificateAuthority',
-      'createCertificateRevocationList',
       'getCertificateRevocationList',
       'listCertificateRevocationLists',
       'updateCertificateRevocationList',
-      'createReusableConfig',
-      'deleteReusableConfig',
       'getReusableConfig',
       'listReusableConfigs',
-      'updateReusableConfig',
     ];
     for (const methodName of certificateAuthorityServiceStubMethods) {
       const callPromise = this.certificateAuthorityServiceStub.then(
@@ -594,7 +542,7 @@ export class CertificateAuthorityServiceClient {
    *   `projects/* /locations/* /certificateAuthorities/*`.
    * @param {string} [request.certificateId]
    *   Optional. It must be unique within a location and match the regular
-   *   expression `[a-zA-Z0-9-]{1,63}`. This field is required when using a
+   *   expression `[a-zA-Z0-9_-]{1,63}`. This field is required when using a
    *   {@link google.cloud.security.privateca.v1beta1.CertificateAuthority|CertificateAuthority} in the Enterprise {@link google.cloud.security.privateca.v1beta1.CertificateAuthority.Tier|CertificateAuthority.Tier},
    *   but is optional and its value is ignored otherwise.
    * @param {google.cloud.security.privateca.v1beta1.Certificate} request.certificate
@@ -906,7 +854,8 @@ export class CertificateAuthorityServiceClient {
     >
   ): void;
   /**
-   * Update a {@link google.cloud.security.privateca.v1beta1.Certificate|Certificate}.
+   * Update a {@link google.cloud.security.privateca.v1beta1.Certificate|Certificate}. Currently, the only field you can update is the
+   * {@link google.cloud.security.privateca.v1beta1.Certificate.labels|labels} field.
    *
    * @param {Object} request
    *   The request object that will be sent.
@@ -1590,7 +1539,7 @@ export class CertificateAuthorityServiceClient {
    *   `projects/* /locations/*`.
    * @param {string} request.certificateAuthorityId
    *   Required. It must be unique within a location and match the regular
-   *   expression `[a-zA-Z0-9-]{1,63}`
+   *   expression `[a-zA-Z0-9_-]{1,63}`
    * @param {google.cloud.security.privateca.v1beta1.CertificateAuthority} request.certificateAuthority
    *   Required. A {@link google.cloud.security.privateca.v1beta1.CertificateAuthority|CertificateAuthority} with initial field values.
    * @param {string} [request.requestId]
@@ -2468,166 +2417,6 @@ export class CertificateAuthorityServiceClient {
       protos.google.cloud.security.privateca.v1beta1.OperationMetadata
     >;
   }
-  createCertificateRevocationList(
-    request: protos.google.cloud.security.privateca.v1beta1.ICreateCertificateRevocationListRequest,
-    options?: gax.CallOptions
-  ): Promise<
-    [
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.ICertificateRevocationList,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | undefined,
-      {} | undefined
-    ]
-  >;
-  createCertificateRevocationList(
-    request: protos.google.cloud.security.privateca.v1beta1.ICreateCertificateRevocationListRequest,
-    options: gax.CallOptions,
-    callback: Callback<
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.ICertificateRevocationList,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): void;
-  createCertificateRevocationList(
-    request: protos.google.cloud.security.privateca.v1beta1.ICreateCertificateRevocationListRequest,
-    callback: Callback<
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.ICertificateRevocationList,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): void;
-  /**
-   * Create a new {@link google.cloud.security.privateca.v1beta1.CertificateRevocationList|CertificateRevocationList} in a given Project, Location
-   * for a particular {@link google.cloud.security.privateca.v1beta1.CertificateAuthority|CertificateAuthority}.
-   *
-   * @param {Object} request
-   *   The request object that will be sent.
-   * @param {string} request.parent
-   *   Required. The resource name of the location and {@link google.cloud.security.privateca.v1beta1.CertificateAuthority|CertificateAuthority}
-   *   associated with the {@link google.cloud.security.privateca.v1beta1.CertificateRevocationList|CertificateRevocationList}, in the format
-   *   `projects/* /locations/* /certificateAuthorities/*`.
-   * @param {string} request.certificateRevocationListId
-   *   Required. It must be unique within a location and match the regular expression
-   *   `[a-zA-Z0-9-]{1,63}`
-   * @param {google.cloud.security.privateca.v1beta1.CertificateRevocationList} request.certificateRevocationList
-   *   Required. A {@link google.cloud.security.privateca.v1beta1.CertificateRevocationList|CertificateRevocationList} with initial field values.
-   * @param {string} [request.requestId]
-   *   Optional. An ID to identify requests. Specify a unique request ID so that if you must
-   *   retry your request, the server will know to ignore the request if it has
-   *   already been completed. The server will guarantee that for at least 60
-   *   minutes since the first request.
-   *
-   *   For example, consider a situation where you make an initial request and t
-   *   he request times out. If you make the request again with the same request
-   *   ID, the server can check if original operation with the same request ID
-   *   was received, and if so, will ignore the second request. This prevents
-   *   clients from accidentally creating duplicate commitments.
-   *
-   *   The request ID must be a valid UUID with the exception that zero UUID is
-   *   not supported (00000000-0000-0000-0000-000000000000).
-   * @param {object} [options]
-   *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
-   * @returns {Promise} - The promise which resolves to an array.
-   *   The first element of the array is an object representing [Operation]{@link google.longrunning.Operation}.
-   *   The promise has a method named "cancel" which cancels the ongoing API call.
-   */
-  createCertificateRevocationList(
-    request: protos.google.cloud.security.privateca.v1beta1.ICreateCertificateRevocationListRequest,
-    optionsOrCallback?:
-      | gax.CallOptions
-      | Callback<
-          LROperation<
-            protos.google.cloud.security.privateca.v1beta1.ICertificateRevocationList,
-            protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-          >,
-          protos.google.longrunning.IOperation | null | undefined,
-          {} | null | undefined
-        >,
-    callback?: Callback<
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.ICertificateRevocationList,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): Promise<
-    [
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.ICertificateRevocationList,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | undefined,
-      {} | undefined
-    ]
-  > | void {
-    request = request || {};
-    let options: gax.CallOptions;
-    if (typeof optionsOrCallback === 'function' && callback === undefined) {
-      callback = optionsOrCallback;
-      options = {};
-    } else {
-      options = optionsOrCallback as gax.CallOptions;
-    }
-    options = options || {};
-    options.otherArgs = options.otherArgs || {};
-    options.otherArgs.headers = options.otherArgs.headers || {};
-    options.otherArgs.headers[
-      'x-goog-request-params'
-    ] = gax.routingHeader.fromParams({
-      parent: request.parent || '',
-    });
-    this.initialize();
-    return this.innerApiCalls.createCertificateRevocationList(
-      request,
-      options,
-      callback
-    );
-  }
-  /**
-   * Check the status of the long running operation returned by the createCertificateRevocationList() method.
-   * @param {String} name
-   *   The operation name that will be passed.
-   * @returns {Promise} - The promise which resolves to an object.
-   *   The decoded operation object has result and metadata field to get information from.
-   *
-   * @example:
-   *   const decodedOperation = await checkCreateCertificateRevocationListProgress(name);
-   *   console.log(decodedOperation.result);
-   *   console.log(decodedOperation.done);
-   *   console.log(decodedOperation.metadata);
-   *
-   */
-  async checkCreateCertificateRevocationListProgress(
-    name: string
-  ): Promise<
-    LROperation<
-      protos.google.cloud.security.privateca.v1beta1.CertificateRevocationList,
-      protos.google.cloud.security.privateca.v1beta1.OperationMetadata
-    >
-  > {
-    const request = new operationsProtos.google.longrunning.GetOperationRequest(
-      {name}
-    );
-    const [operation] = await this.operationsClient.getOperation(request);
-    const decodeOperation = new gax.Operation(
-      operation,
-      this.descriptors.longrunning.createCertificateRevocationList,
-      gax.createDefaultBackoffSettings()
-    );
-    return decodeOperation as LROperation<
-      protos.google.cloud.security.privateca.v1beta1.CertificateRevocationList,
-      protos.google.cloud.security.privateca.v1beta1.OperationMetadata
-    >;
-  }
   updateCertificateRevocationList(
     request: protos.google.cloud.security.privateca.v1beta1.IUpdateCertificateRevocationListRequest,
     options?: gax.CallOptions
@@ -2783,460 +2572,6 @@ export class CertificateAuthorityServiceClient {
       protos.google.cloud.security.privateca.v1beta1.OperationMetadata
     >;
   }
-  createReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.ICreateReusableConfigRequest,
-    options?: gax.CallOptions
-  ): Promise<
-    [
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | undefined,
-      {} | undefined
-    ]
-  >;
-  createReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.ICreateReusableConfigRequest,
-    options: gax.CallOptions,
-    callback: Callback<
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): void;
-  createReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.ICreateReusableConfigRequest,
-    callback: Callback<
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): void;
-  /**
-   * Create a new {@link google.cloud.security.privateca.v1beta1.ReusableConfig|ReusableConfig} in a given Project and Location.
-   *
-   * @param {Object} request
-   *   The request object that will be sent.
-   * @param {string} request.parent
-   *   Required. The resource name of the location associated with the
-   *   {@link google.cloud.security.privateca.v1beta1.ReusableConfig|ReusableConfig}, in the format
-   *   `projects/* /locations/*`.
-   * @param {string} request.reusableConfigId
-   *   Required. It must be unique within a location and match the regular
-   *   expression `[a-zA-Z0-9-]{1,63}`
-   * @param {google.cloud.security.privateca.v1beta1.ReusableConfig} request.reusableConfig
-   *   Required. A {@link google.cloud.security.privateca.v1beta1.ReusableConfig|ReusableConfig} with initial field values.
-   * @param {string} [request.requestId]
-   *   Optional. An ID to identify requests. Specify a unique request ID so that if you must
-   *   retry your request, the server will know to ignore the request if it has
-   *   already been completed. The server will guarantee that for at least 60
-   *   minutes since the first request.
-   *
-   *   For example, consider a situation where you make an initial request and t
-   *   he request times out. If you make the request again with the same request
-   *   ID, the server can check if original operation with the same request ID
-   *   was received, and if so, will ignore the second request. This prevents
-   *   clients from accidentally creating duplicate commitments.
-   *
-   *   The request ID must be a valid UUID with the exception that zero UUID is
-   *   not supported (00000000-0000-0000-0000-000000000000).
-   * @param {object} [options]
-   *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
-   * @returns {Promise} - The promise which resolves to an array.
-   *   The first element of the array is an object representing [Operation]{@link google.longrunning.Operation}.
-   *   The promise has a method named "cancel" which cancels the ongoing API call.
-   */
-  createReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.ICreateReusableConfigRequest,
-    optionsOrCallback?:
-      | gax.CallOptions
-      | Callback<
-          LROperation<
-            protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-            protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-          >,
-          protos.google.longrunning.IOperation | null | undefined,
-          {} | null | undefined
-        >,
-    callback?: Callback<
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): Promise<
-    [
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | undefined,
-      {} | undefined
-    ]
-  > | void {
-    request = request || {};
-    let options: gax.CallOptions;
-    if (typeof optionsOrCallback === 'function' && callback === undefined) {
-      callback = optionsOrCallback;
-      options = {};
-    } else {
-      options = optionsOrCallback as gax.CallOptions;
-    }
-    options = options || {};
-    options.otherArgs = options.otherArgs || {};
-    options.otherArgs.headers = options.otherArgs.headers || {};
-    options.otherArgs.headers[
-      'x-goog-request-params'
-    ] = gax.routingHeader.fromParams({
-      parent: request.parent || '',
-    });
-    this.initialize();
-    return this.innerApiCalls.createReusableConfig(request, options, callback);
-  }
-  /**
-   * Check the status of the long running operation returned by the createReusableConfig() method.
-   * @param {String} name
-   *   The operation name that will be passed.
-   * @returns {Promise} - The promise which resolves to an object.
-   *   The decoded operation object has result and metadata field to get information from.
-   *
-   * @example:
-   *   const decodedOperation = await checkCreateReusableConfigProgress(name);
-   *   console.log(decodedOperation.result);
-   *   console.log(decodedOperation.done);
-   *   console.log(decodedOperation.metadata);
-   *
-   */
-  async checkCreateReusableConfigProgress(
-    name: string
-  ): Promise<
-    LROperation<
-      protos.google.cloud.security.privateca.v1beta1.ReusableConfig,
-      protos.google.cloud.security.privateca.v1beta1.OperationMetadata
-    >
-  > {
-    const request = new operationsProtos.google.longrunning.GetOperationRequest(
-      {name}
-    );
-    const [operation] = await this.operationsClient.getOperation(request);
-    const decodeOperation = new gax.Operation(
-      operation,
-      this.descriptors.longrunning.createReusableConfig,
-      gax.createDefaultBackoffSettings()
-    );
-    return decodeOperation as LROperation<
-      protos.google.cloud.security.privateca.v1beta1.ReusableConfig,
-      protos.google.cloud.security.privateca.v1beta1.OperationMetadata
-    >;
-  }
-  deleteReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.IDeleteReusableConfigRequest,
-    options?: gax.CallOptions
-  ): Promise<
-    [
-      LROperation<
-        protos.google.protobuf.IEmpty,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | undefined,
-      {} | undefined
-    ]
-  >;
-  deleteReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.IDeleteReusableConfigRequest,
-    options: gax.CallOptions,
-    callback: Callback<
-      LROperation<
-        protos.google.protobuf.IEmpty,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): void;
-  deleteReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.IDeleteReusableConfigRequest,
-    callback: Callback<
-      LROperation<
-        protos.google.protobuf.IEmpty,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): void;
-  /**
-   * DeleteReusableConfig deletes a {@link google.cloud.security.privateca.v1beta1.ReusableConfig|ReusableConfig}.
-   *
-   * @param {Object} request
-   *   The request object that will be sent.
-   * @param {string} request.name
-   *   Required. The resource name for this {@link google.cloud.security.privateca.v1beta1.ReusableConfig|ReusableConfig} in the format
-   *   `projects/* /locations/* /reusableConfigs/*`.
-   * @param {string} [request.requestId]
-   *   Optional. An ID to identify requests. Specify a unique request ID so that if you must
-   *   retry your request, the server will know to ignore the request if it has
-   *   already been completed. The server will guarantee that for at least 60
-   *   minutes since the first request.
-   *
-   *   For example, consider a situation where you make an initial request and t
-   *   he request times out. If you make the request again with the same request
-   *   ID, the server can check if original operation with the same request ID
-   *   was received, and if so, will ignore the second request. This prevents
-   *   clients from accidentally creating duplicate commitments.
-   *
-   *   The request ID must be a valid UUID with the exception that zero UUID is
-   *   not supported (00000000-0000-0000-0000-000000000000).
-   * @param {object} [options]
-   *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
-   * @returns {Promise} - The promise which resolves to an array.
-   *   The first element of the array is an object representing [Operation]{@link google.longrunning.Operation}.
-   *   The promise has a method named "cancel" which cancels the ongoing API call.
-   */
-  deleteReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.IDeleteReusableConfigRequest,
-    optionsOrCallback?:
-      | gax.CallOptions
-      | Callback<
-          LROperation<
-            protos.google.protobuf.IEmpty,
-            protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-          >,
-          protos.google.longrunning.IOperation | null | undefined,
-          {} | null | undefined
-        >,
-    callback?: Callback<
-      LROperation<
-        protos.google.protobuf.IEmpty,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): Promise<
-    [
-      LROperation<
-        protos.google.protobuf.IEmpty,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | undefined,
-      {} | undefined
-    ]
-  > | void {
-    request = request || {};
-    let options: gax.CallOptions;
-    if (typeof optionsOrCallback === 'function' && callback === undefined) {
-      callback = optionsOrCallback;
-      options = {};
-    } else {
-      options = optionsOrCallback as gax.CallOptions;
-    }
-    options = options || {};
-    options.otherArgs = options.otherArgs || {};
-    options.otherArgs.headers = options.otherArgs.headers || {};
-    options.otherArgs.headers[
-      'x-goog-request-params'
-    ] = gax.routingHeader.fromParams({
-      name: request.name || '',
-    });
-    this.initialize();
-    return this.innerApiCalls.deleteReusableConfig(request, options, callback);
-  }
-  /**
-   * Check the status of the long running operation returned by the deleteReusableConfig() method.
-   * @param {String} name
-   *   The operation name that will be passed.
-   * @returns {Promise} - The promise which resolves to an object.
-   *   The decoded operation object has result and metadata field to get information from.
-   *
-   * @example:
-   *   const decodedOperation = await checkDeleteReusableConfigProgress(name);
-   *   console.log(decodedOperation.result);
-   *   console.log(decodedOperation.done);
-   *   console.log(decodedOperation.metadata);
-   *
-   */
-  async checkDeleteReusableConfigProgress(
-    name: string
-  ): Promise<
-    LROperation<
-      protos.google.protobuf.Empty,
-      protos.google.cloud.security.privateca.v1beta1.OperationMetadata
-    >
-  > {
-    const request = new operationsProtos.google.longrunning.GetOperationRequest(
-      {name}
-    );
-    const [operation] = await this.operationsClient.getOperation(request);
-    const decodeOperation = new gax.Operation(
-      operation,
-      this.descriptors.longrunning.deleteReusableConfig,
-      gax.createDefaultBackoffSettings()
-    );
-    return decodeOperation as LROperation<
-      protos.google.protobuf.Empty,
-      protos.google.cloud.security.privateca.v1beta1.OperationMetadata
-    >;
-  }
-  updateReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.IUpdateReusableConfigRequest,
-    options?: gax.CallOptions
-  ): Promise<
-    [
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | undefined,
-      {} | undefined
-    ]
-  >;
-  updateReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.IUpdateReusableConfigRequest,
-    options: gax.CallOptions,
-    callback: Callback<
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): void;
-  updateReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.IUpdateReusableConfigRequest,
-    callback: Callback<
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): void;
-  /**
-   * Update a {@link google.cloud.security.privateca.v1beta1.ReusableConfig|ReusableConfig}.
-   *
-   * @param {Object} request
-   *   The request object that will be sent.
-   * @param {google.cloud.security.privateca.v1beta1.ReusableConfig} request.reusableConfig
-   *   Required. {@link google.cloud.security.privateca.v1beta1.ReusableConfig|ReusableConfig} with updated values.
-   * @param {google.protobuf.FieldMask} request.updateMask
-   *   Required. A list of fields to be updated in this request.
-   * @param {string} [request.requestId]
-   *   Optional. An ID to identify requests. Specify a unique request ID so that if you must
-   *   retry your request, the server will know to ignore the request if it has
-   *   already been completed. The server will guarantee that for at least 60
-   *   minutes since the first request.
-   *
-   *   For example, consider a situation where you make an initial request and t
-   *   he request times out. If you make the request again with the same request
-   *   ID, the server can check if original operation with the same request ID
-   *   was received, and if so, will ignore the second request. This prevents
-   *   clients from accidentally creating duplicate commitments.
-   *
-   *   The request ID must be a valid UUID with the exception that zero UUID is
-   *   not supported (00000000-0000-0000-0000-000000000000).
-   * @param {object} [options]
-   *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
-   * @returns {Promise} - The promise which resolves to an array.
-   *   The first element of the array is an object representing [Operation]{@link google.longrunning.Operation}.
-   *   The promise has a method named "cancel" which cancels the ongoing API call.
-   */
-  updateReusableConfig(
-    request: protos.google.cloud.security.privateca.v1beta1.IUpdateReusableConfigRequest,
-    optionsOrCallback?:
-      | gax.CallOptions
-      | Callback<
-          LROperation<
-            protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-            protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-          >,
-          protos.google.longrunning.IOperation | null | undefined,
-          {} | null | undefined
-        >,
-    callback?: Callback<
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | null | undefined,
-      {} | null | undefined
-    >
-  ): Promise<
-    [
-      LROperation<
-        protos.google.cloud.security.privateca.v1beta1.IReusableConfig,
-        protos.google.cloud.security.privateca.v1beta1.IOperationMetadata
-      >,
-      protos.google.longrunning.IOperation | undefined,
-      {} | undefined
-    ]
-  > | void {
-    request = request || {};
-    let options: gax.CallOptions;
-    if (typeof optionsOrCallback === 'function' && callback === undefined) {
-      callback = optionsOrCallback;
-      options = {};
-    } else {
-      options = optionsOrCallback as gax.CallOptions;
-    }
-    options = options || {};
-    options.otherArgs = options.otherArgs || {};
-    options.otherArgs.headers = options.otherArgs.headers || {};
-    options.otherArgs.headers[
-      'x-goog-request-params'
-    ] = gax.routingHeader.fromParams({
-      'reusable_config.name': request.reusableConfig!.name || '',
-    });
-    this.initialize();
-    return this.innerApiCalls.updateReusableConfig(request, options, callback);
-  }
-  /**
-   * Check the status of the long running operation returned by the updateReusableConfig() method.
-   * @param {String} name
-   *   The operation name that will be passed.
-   * @returns {Promise} - The promise which resolves to an object.
-   *   The decoded operation object has result and metadata field to get information from.
-   *
-   * @example:
-   *   const decodedOperation = await checkUpdateReusableConfigProgress(name);
-   *   console.log(decodedOperation.result);
-   *   console.log(decodedOperation.done);
-   *   console.log(decodedOperation.metadata);
-   *
-   */
-  async checkUpdateReusableConfigProgress(
-    name: string
-  ): Promise<
-    LROperation<
-      protos.google.cloud.security.privateca.v1beta1.ReusableConfig,
-      protos.google.cloud.security.privateca.v1beta1.OperationMetadata
-    >
-  > {
-    const request = new operationsProtos.google.longrunning.GetOperationRequest(
-      {name}
-    );
-    const [operation] = await this.operationsClient.getOperation(request);
-    const decodeOperation = new gax.Operation(
-      operation,
-      this.descriptors.longrunning.updateReusableConfig,
-      gax.createDefaultBackoffSettings()
-    );
-    return decodeOperation as LROperation<
-      protos.google.cloud.security.privateca.v1beta1.ReusableConfig,
-      protos.google.cloud.security.privateca.v1beta1.OperationMetadata
-    >;
-  }
   listCertificates(
     request: protos.google.cloud.security.privateca.v1beta1.IListCertificatesRequest,
     options?: gax.CallOptions
@@ -3288,9 +2623,13 @@ export class CertificateAuthorityServiceClient {
    *   Optional. Pagination token, returned earlier via
    *   {@link google.cloud.security.privateca.v1beta1.ListCertificatesResponse.next_page_token|ListCertificatesResponse.next_page_token}.
    * @param {string} [request.filter]
-   *   Optional. Only include resources that match the filter in the response.
+   *   Optional. Only include resources that match the filter in the response. For details
+   *   on supported filters and syntax, see [Certificates Filtering
+   *   documentation](https://cloud.google.com/certificate-authority-service/docs/sorting-filtering-certificates#filtering_support).
    * @param {string} [request.orderBy]
-   *   Optional. Specify how the results should be sorted.
+   *   Optional. Specify how the results should be sorted. For details on supported fields
+   *   and syntax, see [Certificates Sorting
+   *   documentation](https://cloud.google.com/certificate-authority-service/docs/sorting-filtering-certificates#sorting_support).
    * @param {object} [options]
    *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
    * @returns {Promise} - The promise which resolves to an array.
@@ -3384,9 +2723,13 @@ export class CertificateAuthorityServiceClient {
    *   Optional. Pagination token, returned earlier via
    *   {@link google.cloud.security.privateca.v1beta1.ListCertificatesResponse.next_page_token|ListCertificatesResponse.next_page_token}.
    * @param {string} [request.filter]
-   *   Optional. Only include resources that match the filter in the response.
+   *   Optional. Only include resources that match the filter in the response. For details
+   *   on supported filters and syntax, see [Certificates Filtering
+   *   documentation](https://cloud.google.com/certificate-authority-service/docs/sorting-filtering-certificates#filtering_support).
    * @param {string} [request.orderBy]
-   *   Optional. Specify how the results should be sorted.
+   *   Optional. Specify how the results should be sorted. For details on supported fields
+   *   and syntax, see [Certificates Sorting
+   *   documentation](https://cloud.google.com/certificate-authority-service/docs/sorting-filtering-certificates#sorting_support).
    * @param {object} [options]
    *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
    * @returns {Stream}
@@ -3436,9 +2779,13 @@ export class CertificateAuthorityServiceClient {
    *   Optional. Pagination token, returned earlier via
    *   {@link google.cloud.security.privateca.v1beta1.ListCertificatesResponse.next_page_token|ListCertificatesResponse.next_page_token}.
    * @param {string} [request.filter]
-   *   Optional. Only include resources that match the filter in the response.
+   *   Optional. Only include resources that match the filter in the response. For details
+   *   on supported filters and syntax, see [Certificates Filtering
+   *   documentation](https://cloud.google.com/certificate-authority-service/docs/sorting-filtering-certificates#filtering_support).
    * @param {string} [request.orderBy]
-   *   Optional. Specify how the results should be sorted.
+   *   Optional. Specify how the results should be sorted. For details on supported fields
+   *   and syntax, see [Certificates Sorting
+   *   documentation](https://cloud.google.com/certificate-authority-service/docs/sorting-filtering-certificates#sorting_support).
    * @param {object} [options]
    *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
    * @returns {Object}
