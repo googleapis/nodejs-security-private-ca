@@ -28,7 +28,7 @@
     var $Reader = $protobuf.Reader, $Writer = $protobuf.Writer, $util = $protobuf.util;
     
     // Exported root namespace
-    var $root = $protobuf.roots.privateca_protos || ($protobuf.roots.privateca_protos = {});
+    var $root = $protobuf.roots._google_cloud_security_private_ca_protos || ($protobuf.roots._google_cloud_security_private_ca_protos = {});
     
     $root.google = (function() {
     
