@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/googleapis/nodejs-security-private-ca/compare/v1.0.0...v1.0.1) (2020-11-07)
+
+
+### Bug Fixes
+
+* do not modify options object, use defaultScopes ([#28](https://www.github.com/googleapis/nodejs-security-private-ca/issues/28)) ([5e9de83](https://www.github.com/googleapis/nodejs-security-private-ca/commit/5e9de8377ad9d56037d86ac40e9765d6f3b60681))
+
 ## 1.0.0 (2020-09-24)
 
 
