@@ -3,8 +3,8 @@
     {
       "git": {
         "name": ".",
-        "remote": "git@github.com:googleapis/nodejs-security-private-ca.git",
-        "sha": "dae7dddb941fac3984d882be947050e3efbafa2f"
+        "remote": "https://github.com/googleapis/nodejs-security-private-ca.git",
+        "sha": "b99b83ed439e9e0317ae19ab98227a9171c88173"
       }
     },
     {
@@ -85,8 +85,6 @@
     "CONTRIBUTING.md",
     "LICENSE",
     "api-extractor.json",
-    "linkinator.config.json",
-    "package-lock.json.2869839641",
     "protos/google/cloud/security/privateca/v1beta1/resources.proto",
     "protos/google/cloud/security/privateca/v1beta1/service.proto",
     "protos/protos.d.ts",
@@ -94,7 +92,6 @@
     "protos/protos.json",
     "renovate.json",
     "samples/README.md",
-    "samples/package-lock.json.344714580",
     "src/index.ts",
     "src/v1beta1/certificate_authority_service_client.ts",
     "src/v1beta1/certificate_authority_service_client_config.json",
