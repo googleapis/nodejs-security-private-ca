@@ -275,7 +275,7 @@ export class CertificateAuthorityServiceClient {
       '.google.cloud.security.privateca.v1.OperationMetadata'
     ) as gax.protobuf.Type;
     const deleteCaPoolResponse = protoFilesRoot.lookup(
-      '.google.cloud.security.privateca.v1.CaPool'
+      '.google.protobuf.Empty'
     ) as gax.protobuf.Type;
     const deleteCaPoolMetadata = protoFilesRoot.lookup(
       '.google.cloud.security.privateca.v1.OperationMetadata'
@@ -3131,7 +3131,7 @@ export class CertificateAuthorityServiceClient {
   ): Promise<
     [
       LROperation<
-        protos.google.cloud.security.privateca.v1.ICaPool,
+        protos.google.protobuf.IEmpty,
         protos.google.cloud.security.privateca.v1.IOperationMetadata
       >,
       protos.google.longrunning.IOperation | undefined,
@@ -3143,7 +3143,7 @@ export class CertificateAuthorityServiceClient {
     options: CallOptions,
     callback: Callback<
       LROperation<
-        protos.google.cloud.security.privateca.v1.ICaPool,
+        protos.google.protobuf.IEmpty,
         protos.google.cloud.security.privateca.v1.IOperationMetadata
       >,
       protos.google.longrunning.IOperation | null | undefined,
@@ -3154,7 +3154,7 @@ export class CertificateAuthorityServiceClient {
     request: protos.google.cloud.security.privateca.v1.IDeleteCaPoolRequest,
     callback: Callback<
       LROperation<
-        protos.google.cloud.security.privateca.v1.ICaPool,
+        protos.google.protobuf.IEmpty,
         protos.google.cloud.security.privateca.v1.IOperationMetadata
       >,
       protos.google.longrunning.IOperation | null | undefined,
@@ -3202,7 +3202,7 @@ export class CertificateAuthorityServiceClient {
       | CallOptions
       | Callback<
           LROperation<
-            protos.google.cloud.security.privateca.v1.ICaPool,
+            protos.google.protobuf.IEmpty,
             protos.google.cloud.security.privateca.v1.IOperationMetadata
           >,
           protos.google.longrunning.IOperation | null | undefined,
@@ -3210,7 +3210,7 @@ export class CertificateAuthorityServiceClient {
         >,
     callback?: Callback<
       LROperation<
-        protos.google.cloud.security.privateca.v1.ICaPool,
+        protos.google.protobuf.IEmpty,
         protos.google.cloud.security.privateca.v1.IOperationMetadata
       >,
       protos.google.longrunning.IOperation | null | undefined,
@@ -3219,7 +3219,7 @@ export class CertificateAuthorityServiceClient {
   ): Promise<
     [
       LROperation<
-        protos.google.cloud.security.privateca.v1.ICaPool,
+        protos.google.protobuf.IEmpty,
         protos.google.cloud.security.privateca.v1.IOperationMetadata
       >,
       protos.google.longrunning.IOperation | undefined,
@@ -3263,7 +3263,7 @@ export class CertificateAuthorityServiceClient {
     name: string
   ): Promise<
     LROperation<
-      protos.google.cloud.security.privateca.v1.CaPool,
+      protos.google.protobuf.Empty,
       protos.google.cloud.security.privateca.v1.OperationMetadata
     >
   > {
@@ -3277,7 +3277,7 @@ export class CertificateAuthorityServiceClient {
       gax.createDefaultBackoffSettings()
     );
     return decodeOperation as LROperation<
-      protos.google.cloud.security.privateca.v1.CaPool,
+      protos.google.protobuf.Empty,
       protos.google.cloud.security.privateca.v1.OperationMetadata
     >;
   }
