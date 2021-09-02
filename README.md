@@ -142,8 +142,8 @@ Contributions welcome! See the [Contributing Guide](https://github.com/googleapi
 Please note that this `README.md`, the `samples/README.md`,
 and a variety of configuration files in this repository (including `.nycrc` and `tsconfig.json`)
 are generated from a central template. To edit one of these files, make an edit
-to its template in this
-[directory](https://github.com/googleapis/synthtool/tree/master/synthtool/gcp/templates/node_library).
+to its templates in
+[directory](https://github.com/googleapis/synthtool).
 
 ## License
 
@@ -151,7 +151,7 @@ Apache Version 2.0
 
 See [LICENSE](https://github.com/googleapis/nodejs-security-private-ca/blob/master/LICENSE)
 
-[client-docs]: https://googleapis.dev/nodejs/security-private-ca/latest/index.html
+[client-docs]: https://cloud.google.com/nodejs/docs/reference/security-private-ca/latest
 [product-docs]: https://cloud.google.com/certificate-authority-service
 [shell_img]: https://gstatic.com/cloudssh/images/open-btn.png
 [projects]: https://console.cloud.google.com/project
