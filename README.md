@@ -6,7 +6,7 @@
 
 [![release level](https://img.shields.io/badge/release%20level-general%20availability%20%28GA%29-brightgreen.svg?style=flat)](https://cloud.google.com/terms/launch-stages)
 [![npm version](https://img.shields.io/npm/v/@google-cloud/security-private-ca.svg)](https://www.npmjs.org/package/@google-cloud/security-private-ca)
-[![codecov](https://img.shields.io/codecov/c/github/googleapis/nodejs-security-private-ca/master.svg?style=flat)](https://codecov.io/gh/googleapis/nodejs-security-private-ca)
+[![codecov](https://img.shields.io/codecov/c/github/googleapis/nodejs-security-private-ca/main.svg?style=flat)](https://codecov.io/gh/googleapis/nodejs-security-private-ca)
 
 
 
@@ -15,7 +15,7 @@ Privateca client for Node.js
 
 
 A comprehensive list of changes in each version may be found in
-[the CHANGELOG](https://github.com/googleapis/nodejs-security-private-ca/blob/master/CHANGELOG.md).
+[the CHANGELOG](https://github.com/googleapis/nodejs-security-private-ca/blob/main/CHANGELOG.md).
 
 * [Certificate Authority Service Node.js Client API Reference][client-docs]
 * [Certificate Authority Service Documentation][product-docs]
@@ -72,7 +72,7 @@ const client = new CertificateAuthorityServiceClient();
 
 async function listCertificates() {
   const res = await client.listCertificates({
-    parent: `projects/${projectId}/locations/${location}/certificateAuthorities/${name}`,
+    parent: `projects/${projectId}/locations/${location}/caPools/${name}`,
   });
   return res;
 }
@@ -85,11 +85,11 @@ listCertificates();
 
 ## Samples
 
-Samples are in the [`samples/`](https://github.com/googleapis/nodejs-security-private-ca/tree/master/samples) directory. Each sample's `README.md` has instructions for running its sample.
+Samples are in the [`samples/`](https://github.com/googleapis/nodejs-security-private-ca/tree/main/samples) directory. Each sample's `README.md` has instructions for running its sample.
 
 | Sample                      | Source Code                       | Try it |
 | --------------------------- | --------------------------------- | ------ |
-| Quickstart | [source code](https://github.com/googleapis/nodejs-security-private-ca/blob/master/samples/quickstart.js) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/nodejs-security-private-ca&page=editor&open_in_editor=samples/quickstart.js,samples/README.md) |
+| Quickstart | [source code](https://github.com/googleapis/nodejs-security-private-ca/blob/main/samples/quickstart.js) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/nodejs-security-private-ca&page=editor&open_in_editor=samples/quickstart.js,samples/README.md) |
 
 
 
@@ -138,7 +138,7 @@ More Information: [Google Cloud Platform Launch Stages][launch_stages]
 
 ## Contributing
 
-Contributions welcome! See the [Contributing Guide](https://github.com/googleapis/nodejs-security-private-ca/blob/master/CONTRIBUTING.md).
+Contributions welcome! See the [Contributing Guide](https://github.com/googleapis/nodejs-security-private-ca/blob/main/CONTRIBUTING.md).
 
 Please note that this `README.md`, the `samples/README.md`,
 and a variety of configuration files in this repository (including `.nycrc` and `tsconfig.json`)
@@ -150,7 +150,7 @@ to its templates in
 
 Apache Version 2.0
 
-See [LICENSE](https://github.com/googleapis/nodejs-security-private-ca/blob/master/LICENSE)
+See [LICENSE](https://github.com/googleapis/nodejs-security-private-ca/blob/main/LICENSE)
 
 [client-docs]: https://cloud.google.com/nodejs/docs/reference/security-private-ca/latest
 [product-docs]: https://cloud.google.com/certificate-authority-service
