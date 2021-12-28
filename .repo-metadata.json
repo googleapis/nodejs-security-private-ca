@@ -12,5 +12,5 @@
   "name": "security-private-ca",
   "issue_tracker": "https://github.com/googleapis/nodejs-security-private-ca/issues",
   "api_shortname": "security-private-ca",
-  "library_type": ""
+  "library_type": "GAPIC_AUTO"
 }
