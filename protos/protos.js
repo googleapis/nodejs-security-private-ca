@@ -10849,7 +10849,7 @@
                             };
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|createCertificate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#createCertificate}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef CreateCertificateCallback
                              * @type {function}
@@ -10882,7 +10882,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCertificate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCertificate}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef GetCertificateCallback
                              * @type {function}
@@ -10915,7 +10915,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCertificates}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCertificates}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef ListCertificatesCallback
                              * @type {function}
@@ -10948,7 +10948,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|revokeCertificate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#revokeCertificate}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef RevokeCertificateCallback
                              * @type {function}
@@ -10981,7 +10981,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCertificate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCertificate}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef UpdateCertificateCallback
                              * @type {function}
@@ -11014,7 +11014,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|activateCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#activateCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef ActivateCertificateAuthorityCallback
                              * @type {function}
@@ -11047,7 +11047,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|createCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#createCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef CreateCertificateAuthorityCallback
                              * @type {function}
@@ -11080,7 +11080,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|disableCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#disableCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef DisableCertificateAuthorityCallback
                              * @type {function}
@@ -11113,7 +11113,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|enableCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#enableCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef EnableCertificateAuthorityCallback
                              * @type {function}
@@ -11146,7 +11146,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|fetchCertificateAuthorityCsr}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#fetchCertificateAuthorityCsr}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef FetchCertificateAuthorityCsrCallback
                              * @type {function}
@@ -11179,7 +11179,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef GetCertificateAuthorityCallback
                              * @type {function}
@@ -11212,7 +11212,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCertificateAuthorities}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCertificateAuthorities}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef ListCertificateAuthoritiesCallback
                              * @type {function}
@@ -11245,7 +11245,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|undeleteCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#undeleteCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef UndeleteCertificateAuthorityCallback
                              * @type {function}
@@ -11278,7 +11278,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|deleteCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#deleteCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef DeleteCertificateAuthorityCallback
                              * @type {function}
@@ -11311,7 +11311,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef UpdateCertificateAuthorityCallback
                              * @type {function}
@@ -11344,7 +11344,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|createCaPool}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#createCaPool}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef CreateCaPoolCallback
                              * @type {function}
@@ -11377,7 +11377,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCaPool}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCaPool}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef UpdateCaPoolCallback
                              * @type {function}
@@ -11410,7 +11410,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCaPool}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCaPool}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef GetCaPoolCallback
                              * @type {function}
@@ -11443,7 +11443,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCaPools}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCaPools}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef ListCaPoolsCallback
                              * @type {function}
@@ -11476,7 +11476,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|deleteCaPool}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#deleteCaPool}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef DeleteCaPoolCallback
                              * @type {function}
@@ -11509,7 +11509,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|fetchCaCerts}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#fetchCaCerts}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef FetchCaCertsCallback
                              * @type {function}
@@ -11542,7 +11542,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCertificateRevocationList}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCertificateRevocationList}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef GetCertificateRevocationListCallback
                              * @type {function}
@@ -11575,7 +11575,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCertificateRevocationLists}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCertificateRevocationLists}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef ListCertificateRevocationListsCallback
                              * @type {function}
@@ -11608,7 +11608,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCertificateRevocationList}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCertificateRevocationList}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef UpdateCertificateRevocationListCallback
                              * @type {function}
@@ -11641,7 +11641,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|createCertificateTemplate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#createCertificateTemplate}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef CreateCertificateTemplateCallback
                              * @type {function}
@@ -11674,7 +11674,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|deleteCertificateTemplate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#deleteCertificateTemplate}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef DeleteCertificateTemplateCallback
                              * @type {function}
@@ -11707,7 +11707,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCertificateTemplate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCertificateTemplate}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef GetCertificateTemplateCallback
                              * @type {function}
@@ -11740,7 +11740,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCertificateTemplates}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCertificateTemplates}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef ListCertificateTemplatesCallback
                              * @type {function}
@@ -11773,7 +11773,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCertificateTemplate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCertificateTemplate}.
                              * @memberof google.cloud.security.privateca.v1.CertificateAuthorityService
                              * @typedef UpdateCertificateTemplateCallback
                              * @type {function}
@@ -30796,7 +30796,7 @@
                             };
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|createCertificate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#createCertificate}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef CreateCertificateCallback
                              * @type {function}
@@ -30829,7 +30829,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|getCertificate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#getCertificate}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef GetCertificateCallback
                              * @type {function}
@@ -30862,7 +30862,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|listCertificates}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#listCertificates}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef ListCertificatesCallback
                              * @type {function}
@@ -30895,7 +30895,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|revokeCertificate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#revokeCertificate}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef RevokeCertificateCallback
                              * @type {function}
@@ -30928,7 +30928,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|updateCertificate}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#updateCertificate}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef UpdateCertificateCallback
                              * @type {function}
@@ -30961,7 +30961,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|activateCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#activateCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef ActivateCertificateAuthorityCallback
                              * @type {function}
@@ -30994,7 +30994,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|createCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#createCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef CreateCertificateAuthorityCallback
                              * @type {function}
@@ -31027,7 +31027,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|disableCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#disableCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef DisableCertificateAuthorityCallback
                              * @type {function}
@@ -31060,7 +31060,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|enableCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#enableCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef EnableCertificateAuthorityCallback
                              * @type {function}
@@ -31093,7 +31093,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|fetchCertificateAuthorityCsr}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#fetchCertificateAuthorityCsr}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef FetchCertificateAuthorityCsrCallback
                              * @type {function}
@@ -31126,7 +31126,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|getCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#getCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef GetCertificateAuthorityCallback
                              * @type {function}
@@ -31159,7 +31159,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|listCertificateAuthorities}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#listCertificateAuthorities}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef ListCertificateAuthoritiesCallback
                              * @type {function}
@@ -31192,7 +31192,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|restoreCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#restoreCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef RestoreCertificateAuthorityCallback
                              * @type {function}
@@ -31225,7 +31225,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|scheduleDeleteCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#scheduleDeleteCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef ScheduleDeleteCertificateAuthorityCallback
                              * @type {function}
@@ -31258,7 +31258,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|updateCertificateAuthority}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#updateCertificateAuthority}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef UpdateCertificateAuthorityCallback
                              * @type {function}
@@ -31291,7 +31291,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|getCertificateRevocationList}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#getCertificateRevocationList}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef GetCertificateRevocationListCallback
                              * @type {function}
@@ -31324,7 +31324,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|listCertificateRevocationLists}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#listCertificateRevocationLists}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef ListCertificateRevocationListsCallback
                              * @type {function}
@@ -31357,7 +31357,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|updateCertificateRevocationList}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#updateCertificateRevocationList}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef UpdateCertificateRevocationListCallback
                              * @type {function}
@@ -31390,7 +31390,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|getReusableConfig}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#getReusableConfig}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef GetReusableConfigCallback
                              * @type {function}
@@ -31423,7 +31423,7 @@
                              */
     
                             /**
-                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|listReusableConfigs}.
+                             * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#listReusableConfigs}.
                              * @memberof google.cloud.security.privateca.v1beta1.CertificateAuthorityService
                              * @typedef ListReusableConfigsCallback
                              * @type {function}
@@ -44532,7 +44532,6 @@
                  * @property {boolean|null} [packed] FieldOptions packed
                  * @property {google.protobuf.FieldOptions.JSType|null} [jstype] FieldOptions jstype
                  * @property {boolean|null} [lazy] FieldOptions lazy
-                 * @property {boolean|null} [unverifiedLazy] FieldOptions unverifiedLazy
                  * @property {boolean|null} [deprecated] FieldOptions deprecated
                  * @property {boolean|null} [weak] FieldOptions weak
                  * @property {Array.<google.protobuf.IUninterpretedOption>|null} [uninterpretedOption] FieldOptions uninterpretedOption
@@ -44588,14 +44587,6 @@
                  * @instance
                  */
                 FieldOptions.prototype.lazy = false;
-    
-                /**
-                 * FieldOptions unverifiedLazy.
-                 * @member {boolean} unverifiedLazy
-                 * @memberof google.protobuf.FieldOptions
-                 * @instance
-                 */
-                FieldOptions.prototype.unverifiedLazy = false;
     
                 /**
                  * FieldOptions deprecated.
@@ -44673,8 +44664,6 @@
                         writer.uint32(/* id 6, wireType 0 =*/48).int32(message.jstype);
                     if (message.weak != null && Object.hasOwnProperty.call(message, "weak"))
                         writer.uint32(/* id 10, wireType 0 =*/80).bool(message.weak);
-                    if (message.unverifiedLazy != null && Object.hasOwnProperty.call(message, "unverifiedLazy"))
-                        writer.uint32(/* id 15, wireType 0 =*/120).bool(message.unverifiedLazy);
                     if (message.uninterpretedOption != null && message.uninterpretedOption.length)
                         for (var i = 0; i < message.uninterpretedOption.length; ++i)
                             $root.google.protobuf.UninterpretedOption.encode(message.uninterpretedOption[i], writer.uint32(/* id 999, wireType 2 =*/7994).fork()).ldelim();
@@ -44731,9 +44720,6 @@
                             break;
                         case 5:
                             message.lazy = reader.bool();
-                            break;
-                        case 15:
-                            message.unverifiedLazy = reader.bool();
                             break;
                         case 3:
                             message.deprecated = reader.bool();
@@ -44818,9 +44804,6 @@
                     if (message.lazy != null && message.hasOwnProperty("lazy"))
                         if (typeof message.lazy !== "boolean")
                             return "lazy: boolean expected";
-                    if (message.unverifiedLazy != null && message.hasOwnProperty("unverifiedLazy"))
-                        if (typeof message.unverifiedLazy !== "boolean")
-                            return "unverifiedLazy: boolean expected";
                     if (message.deprecated != null && message.hasOwnProperty("deprecated"))
                         if (typeof message.deprecated !== "boolean")
                             return "deprecated: boolean expected";
@@ -44906,8 +44889,6 @@
                     }
                     if (object.lazy != null)
                         message.lazy = Boolean(object.lazy);
-                    if (object.unverifiedLazy != null)
-                        message.unverifiedLazy = Boolean(object.unverifiedLazy);
                     if (object.deprecated != null)
                         message.deprecated = Boolean(object.deprecated);
                     if (object.weak != null)
@@ -44995,7 +44976,6 @@
                         object.lazy = false;
                         object.jstype = options.enums === String ? "JS_NORMAL" : 0;
                         object.weak = false;
-                        object.unverifiedLazy = false;
                         object[".google.api.resourceReference"] = null;
                     }
                     if (message.ctype != null && message.hasOwnProperty("ctype"))
@@ -45010,8 +44990,6 @@
                         object.jstype = options.enums === String ? $root.google.protobuf.FieldOptions.JSType[message.jstype] : message.jstype;
                     if (message.weak != null && message.hasOwnProperty("weak"))
                         object.weak = message.weak;
-                    if (message.unverifiedLazy != null && message.hasOwnProperty("unverifiedLazy"))
-                        object.unverifiedLazy = message.unverifiedLazy;
                     if (message.uninterpretedOption && message.uninterpretedOption.length) {
                         object.uninterpretedOption = [];
                         for (var j = 0; j < message.uninterpretedOption.length; ++j)
@@ -51110,7 +51088,7 @@
                 };
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|listOperations}.
+                 * Callback as used by {@link google.longrunning.Operations#listOperations}.
                  * @memberof google.longrunning.Operations
                  * @typedef ListOperationsCallback
                  * @type {function}
@@ -51143,7 +51121,7 @@
                  */
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|getOperation}.
+                 * Callback as used by {@link google.longrunning.Operations#getOperation}.
                  * @memberof google.longrunning.Operations
                  * @typedef GetOperationCallback
                  * @type {function}
@@ -51176,7 +51154,7 @@
                  */
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|deleteOperation}.
+                 * Callback as used by {@link google.longrunning.Operations#deleteOperation}.
                  * @memberof google.longrunning.Operations
                  * @typedef DeleteOperationCallback
                  * @type {function}
@@ -51209,7 +51187,7 @@
                  */
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|cancelOperation}.
+                 * Callback as used by {@link google.longrunning.Operations#cancelOperation}.
                  * @memberof google.longrunning.Operations
                  * @typedef CancelOperationCallback
                  * @type {function}
@@ -51242,7 +51220,7 @@
                  */
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|waitOperation}.
+                 * Callback as used by {@link google.longrunning.Operations#waitOperation}.
                  * @memberof google.longrunning.Operations
                  * @typedef WaitOperationCallback
                  * @type {function}
