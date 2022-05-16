@@ -4459,203 +4459,203 @@ export namespace google {
                     namespace CertificateAuthorityService {
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#createCertificate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|createCertificate}.
                          * @param error Error, if any
                          * @param [response] Certificate
                          */
                         type CreateCertificateCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.Certificate) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCertificate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCertificate}.
                          * @param error Error, if any
                          * @param [response] Certificate
                          */
                         type GetCertificateCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.Certificate) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCertificates}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCertificates}.
                          * @param error Error, if any
                          * @param [response] ListCertificatesResponse
                          */
                         type ListCertificatesCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.ListCertificatesResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#revokeCertificate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|revokeCertificate}.
                          * @param error Error, if any
                          * @param [response] Certificate
                          */
                         type RevokeCertificateCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.Certificate) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCertificate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCertificate}.
                          * @param error Error, if any
                          * @param [response] Certificate
                          */
                         type UpdateCertificateCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.Certificate) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#activateCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|activateCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type ActivateCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#createCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|createCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type CreateCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#disableCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|disableCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type DisableCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#enableCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|enableCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type EnableCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#fetchCertificateAuthorityCsr}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|fetchCertificateAuthorityCsr}.
                          * @param error Error, if any
                          * @param [response] FetchCertificateAuthorityCsrResponse
                          */
                         type FetchCertificateAuthorityCsrCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.FetchCertificateAuthorityCsrResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] CertificateAuthority
                          */
                         type GetCertificateAuthorityCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.CertificateAuthority) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCertificateAuthorities}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCertificateAuthorities}.
                          * @param error Error, if any
                          * @param [response] ListCertificateAuthoritiesResponse
                          */
                         type ListCertificateAuthoritiesCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.ListCertificateAuthoritiesResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#undeleteCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|undeleteCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type UndeleteCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#deleteCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|deleteCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type DeleteCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type UpdateCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#createCaPool}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|createCaPool}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type CreateCaPoolCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCaPool}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCaPool}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type UpdateCaPoolCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCaPool}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCaPool}.
                          * @param error Error, if any
                          * @param [response] CaPool
                          */
                         type GetCaPoolCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.CaPool) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCaPools}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCaPools}.
                          * @param error Error, if any
                          * @param [response] ListCaPoolsResponse
                          */
                         type ListCaPoolsCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.ListCaPoolsResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#deleteCaPool}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|deleteCaPool}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type DeleteCaPoolCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#fetchCaCerts}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|fetchCaCerts}.
                          * @param error Error, if any
                          * @param [response] FetchCaCertsResponse
                          */
                         type FetchCaCertsCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.FetchCaCertsResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCertificateRevocationList}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCertificateRevocationList}.
                          * @param error Error, if any
                          * @param [response] CertificateRevocationList
                          */
                         type GetCertificateRevocationListCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.CertificateRevocationList) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCertificateRevocationLists}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCertificateRevocationLists}.
                          * @param error Error, if any
                          * @param [response] ListCertificateRevocationListsResponse
                          */
                         type ListCertificateRevocationListsCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.ListCertificateRevocationListsResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCertificateRevocationList}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCertificateRevocationList}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type UpdateCertificateRevocationListCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#createCertificateTemplate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|createCertificateTemplate}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type CreateCertificateTemplateCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#deleteCertificateTemplate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|deleteCertificateTemplate}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type DeleteCertificateTemplateCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#getCertificateTemplate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|getCertificateTemplate}.
                          * @param error Error, if any
                          * @param [response] CertificateTemplate
                          */
                         type GetCertificateTemplateCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.CertificateTemplate) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#listCertificateTemplates}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|listCertificateTemplates}.
                          * @param error Error, if any
                          * @param [response] ListCertificateTemplatesResponse
                          */
                         type ListCertificateTemplatesCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1.ListCertificateTemplatesResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService#updateCertificateTemplate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1.CertificateAuthorityService|updateCertificateTemplate}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
@@ -12485,140 +12485,140 @@ export namespace google {
                     namespace CertificateAuthorityService {
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#createCertificate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|createCertificate}.
                          * @param error Error, if any
                          * @param [response] Certificate
                          */
                         type CreateCertificateCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.Certificate) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#getCertificate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|getCertificate}.
                          * @param error Error, if any
                          * @param [response] Certificate
                          */
                         type GetCertificateCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.Certificate) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#listCertificates}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|listCertificates}.
                          * @param error Error, if any
                          * @param [response] ListCertificatesResponse
                          */
                         type ListCertificatesCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.ListCertificatesResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#revokeCertificate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|revokeCertificate}.
                          * @param error Error, if any
                          * @param [response] Certificate
                          */
                         type RevokeCertificateCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.Certificate) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#updateCertificate}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|updateCertificate}.
                          * @param error Error, if any
                          * @param [response] Certificate
                          */
                         type UpdateCertificateCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.Certificate) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#activateCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|activateCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type ActivateCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#createCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|createCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type CreateCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#disableCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|disableCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type DisableCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#enableCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|enableCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type EnableCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#fetchCertificateAuthorityCsr}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|fetchCertificateAuthorityCsr}.
                          * @param error Error, if any
                          * @param [response] FetchCertificateAuthorityCsrResponse
                          */
                         type FetchCertificateAuthorityCsrCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.FetchCertificateAuthorityCsrResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#getCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|getCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] CertificateAuthority
                          */
                         type GetCertificateAuthorityCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.CertificateAuthority) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#listCertificateAuthorities}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|listCertificateAuthorities}.
                          * @param error Error, if any
                          * @param [response] ListCertificateAuthoritiesResponse
                          */
                         type ListCertificateAuthoritiesCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.ListCertificateAuthoritiesResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#restoreCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|restoreCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type RestoreCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#scheduleDeleteCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|scheduleDeleteCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type ScheduleDeleteCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#updateCertificateAuthority}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|updateCertificateAuthority}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type UpdateCertificateAuthorityCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#getCertificateRevocationList}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|getCertificateRevocationList}.
                          * @param error Error, if any
                          * @param [response] CertificateRevocationList
                          */
                         type GetCertificateRevocationListCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.CertificateRevocationList) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#listCertificateRevocationLists}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|listCertificateRevocationLists}.
                          * @param error Error, if any
                          * @param [response] ListCertificateRevocationListsResponse
                          */
                         type ListCertificateRevocationListsCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.ListCertificateRevocationListsResponse) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#updateCertificateRevocationList}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|updateCertificateRevocationList}.
                          * @param error Error, if any
                          * @param [response] Operation
                          */
                         type UpdateCertificateRevocationListCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#getReusableConfig}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|getReusableConfig}.
                          * @param error Error, if any
                          * @param [response] ReusableConfig
                          */
                         type GetReusableConfigCallback = (error: (Error|null), response?: google.cloud.security.privateca.v1beta1.ReusableConfig) => void;
 
                         /**
-                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService#listReusableConfigs}.
+                         * Callback as used by {@link google.cloud.security.privateca.v1beta1.CertificateAuthorityService|listReusableConfigs}.
                          * @param error Error, if any
                          * @param [response] ListReusableConfigsResponse
                          */
@@ -17722,6 +17722,9 @@ export namespace google {
             /** FieldOptions lazy */
             lazy?: (boolean|null);
 
+            /** FieldOptions unverifiedLazy */
+            unverifiedLazy?: (boolean|null);
+
             /** FieldOptions deprecated */
             deprecated?: (boolean|null);
 
@@ -17758,6 +17761,9 @@ export namespace google {
 
             /** FieldOptions lazy. */
             public lazy: boolean;
+
+            /** FieldOptions unverifiedLazy. */
+            public unverifiedLazy: boolean;
 
             /** FieldOptions deprecated. */
             public deprecated: boolean;
@@ -20482,35 +20488,35 @@ export namespace google {
         namespace Operations {
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#listOperations}.
+             * Callback as used by {@link google.longrunning.Operations|listOperations}.
              * @param error Error, if any
              * @param [response] ListOperationsResponse
              */
             type ListOperationsCallback = (error: (Error|null), response?: google.longrunning.ListOperationsResponse) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#getOperation}.
+             * Callback as used by {@link google.longrunning.Operations|getOperation}.
              * @param error Error, if any
              * @param [response] Operation
              */
             type GetOperationCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#deleteOperation}.
+             * Callback as used by {@link google.longrunning.Operations|deleteOperation}.
              * @param error Error, if any
              * @param [response] Empty
              */
             type DeleteOperationCallback = (error: (Error|null), response?: google.protobuf.Empty) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#cancelOperation}.
+             * Callback as used by {@link google.longrunning.Operations|cancelOperation}.
              * @param error Error, if any
              * @param [response] Empty
              */
             type CancelOperationCallback = (error: (Error|null), response?: google.protobuf.Empty) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations#waitOperation}.
+             * Callback as used by {@link google.longrunning.Operations|waitOperation}.
              * @param error Error, if any
              * @param [response] Operation
              */
